@@ -1,0 +1,36 @@
+
+/* // styles/Header.module.css */
+.head {
+  background-color: #0c2340;
+  padding: 1rem;
+  color: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav li {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.nav li:hover {
+  color: #fdd835;
+}

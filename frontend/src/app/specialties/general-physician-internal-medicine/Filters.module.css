@@ -1,0 +1,102 @@
+/* File: app/specialties/general-physician-internal-medicine/styles.module.css */
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: flex-start;
+    margin: 20px 0;
+  }
+  
+  .select {
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    background-color: #f9f9f9;
+    transition: border 0.3s ease, background-color 0.3s ease;
+    width: 180px;
+    margin: 5px 0;
+  }
+  
+  .select:focus {
+    border: 2px solid #1976d2;
+    background-color: #e3f2fd;
+    outline: none;
+  }
+  
+  .select option {
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #fff;
+  }
+  
+  .filters select {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+  }
+  
+  /* For larger screens (desktop) */
+  .filters select:first-child {
+    width: 220px;
+  }
+  
+  .filters select:nth-child(2) {
+    width: 180px;
+  }
+  
+  .filters select:nth-child(3) {
+    width: 180px;
+  }
+  
+  .filters select:nth-child(4) {
+    width: 220px;
+  }
+  
+  .filters select:nth-child(5) {
+    width: 220px;
+  }
+  
+  /* For medium screens (like tablets) */
+  @media (max-width: 1024px) {
+    .filters {
+      justify-content: space-evenly;
+    }
+  
+    .select {
+      width: 180px;
+    }
+  }
+  
+  /* For small screens (like phones) */
+  @media (max-width: 768px) {
+    .filters {
+      justify-content: space-between;  /* Ensure even spacing in the row */
+    }
+  
+    .select {
+      width: 18%;  /* Make each select fill 18% of the row on smaller screens */
+      margin-bottom: 10px;
+    }
+  
+    .filters select:first-child {
+      width: 18%;
+    }
+  
+    .filters select:nth-child(2) {
+      width: 18%;
+    }
+  
+    .filters select:nth-child(3) {
+      width: 18%;
+    }
+  
+    .filters select:nth-child(4) {
+      width: 18%;
+    }
+  
+    .filters select:nth-child(5) {
+      width: 18%;
+    }
+  }
+  

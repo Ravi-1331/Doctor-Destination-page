@@ -1,0 +1,106 @@
+/* File: app/specialties/general-physician-internal-medicine/styles.module.css */
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 15px;
+    width: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 1rem;
+    color: #666;
+    margin: 5px 0;
+  }
+  
+  .card p:first-child {
+    font-weight: bold;
+    color: #444;
+  }
+  
+  .card p:last-child {
+    color: #2e7d32;
+    font-style: italic;
+  }
+  
+  .card .fee {
+    color: #ff5722;
+    font-weight: 600;
+  }
+  
+  .card .available {
+    font-weight: bold;
+    color: #1976d2;
+  }
+  
+  .card .location {
+    font-style: italic;
+    color: #555;
+  }
+  
+  .card .experience {
+    color: #8bc34a;
+    font-weight: 500;
+  }
+  
+  .card .specialty {
+    color: #9c27b0;
+    font-weight: 500;
+  }
+  
+
+  .card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 12px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .gender,
+  .specialty,
+  .experience,
+  .fee,
+  .location,
+  .available {
+    margin: 4px 0;
+    font-size: 14px;
+  }
+  
+  .button {
+    margin-top: 12px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+  

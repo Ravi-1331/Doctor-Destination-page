@@ -1,0 +1,87 @@
+.breadcrumb {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 10px;
+}
+.breadcrumb .arrow {
+  margin: 0 6px;
+}
+.breadcrumb .current {
+  color: #0891b2;
+}
+
+.title-section {
+  margin-bottom: 20px;
+}
+.title-section h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+.doctor-count {
+  color: #6b7280;
+  font-size: 16px;
+}
+
+.page-layout {
+  display: flex;
+  gap: 24px;
+}
+
+.filter-panel {
+  min-width: 200px;
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+.filter-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.apply-btn {
+  margin-top: 12px;
+  background-color: #0891b2;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+}
+
+.doctor-card {
+  display: flex;
+  padding: 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+.doctor-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-right: 16px;
+}
+.doctor-info h3 {
+  margin: 0;
+}
+.doctor-info p {
+  margin: 4px 0;
+}
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+}
+.fee {
+  font-weight: bold;
+  font-size: 16px;
+}
+.consult-btn {
+  border: 1px solid #0891b2;
+  background: none;
+  color: #0891b2;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
