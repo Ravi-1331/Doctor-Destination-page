@@ -4,13 +4,14 @@ import Filters from './Filters';
 import DoctorCard from './DoctorCard';
 import styles from './styles.module.css';
 
-const API_BASE = 'http://localhost:5000/api/doctors';
+const API_BASE = process.env.NEXT_PUBLIC_BACKEND_URL;
 
 export default function DoctorList() {
   const [doctors, setDoctors] = useState([]);
   const [filters, setFilters] = useState({});
   const [page, setPage] = useState(1);
   const [total, setTotal] = useState(0);
+  console.log("API_BASE", API_BASE)
 
   useEffect(() => {
     const fetchDoctors = async () => {
@@ -20,9 +21,9 @@ export default function DoctorList() {
 
         if (hasFilters) {
           const params = new URLSearchParams({ ...filters, page });
-          url = `${API_BASE}/list-doctor-with-filter?${params}`;
+          url = `${API_BASE}/api/doctors/list-doctor-with-filter?${params}`;
         } else {
-          url = `${API_BASE}/all-doctors`;
+          url = `${API_BASE}/api/doctors/all-doctors`;
         }
 
         const res = await fetch(url);
